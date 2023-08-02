@@ -1,6 +1,7 @@
 const { tryCatch } = require("../middlewares/tryCatch")
 const { User } = require("../models/userModel")
 const bcrypt = require('bcrypt')
+const {CustomError} = require('../throwError')
 
 // register user 
 exports.registerUser=tryCatch(async (req, res, next)=>{
